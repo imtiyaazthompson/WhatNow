@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>What Now | Quick News</title>
+    <link rel="stylesheet" href="../static/master.css">
+  </head>
+  <body>
+    <div class="col-d-20">header</div>
+    <div class="newline"></div>
+    <br>
+    <div class="col-d-8">
+      <div class="col-d-3">
+        Region
+      </div>
+      <div class="col-d-17">
+        <form class="country" id="country" action="" method="post">
+          <select class="fill-width" name="countries">
+            {% for country in countries %}
+              <option value="{{ country.lower() }}">{{ country }}</option>
+            {% endfor %}
+          </select>
+          <br><br>
+          <input type="submit" name="Get News" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="col-d-12">
+      {% if country != None %}
+      <ol>
+        {% for headline in news %}
+          <li><a href="{{ headline[0] }}">{{ headline[1] }}</a></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+
+      {% if country == None %}
+       We got no news bud!
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid blue;
+  }
+
+  .newline::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .top-hat {
+    margin-top: 50px;
+  }
+
+  .bottom-hat {
+    margin-bottom: 20px
+  }
+
+  .fill-height {
+    height: 100%;
+  }
+
+  .fill-width {
+    width: 100%;
+  }
+
+  .no-pad {
+    padding: 0;
+  }
+
+  .small-pad {
+    padding: 8px;
+  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-m-1 { width: 5%; }
+  .col-m-2 { width: 10%; }
+  .col-m-3 { width: 15%; }
+  .col-m-4 { width: 20%; }
+  .col-m-5 { width: 25%; }
+  .col-m-6 { width: 30%; }
+  .col-m-7 { width: 35%; }
+  .col-m-8 { width: 40%; }
+  .col-m-9 { width: 45%; }
+  .col-m-10 { width: 50%; }
+  .col-m-11 { width: 55%; }
+  .col-m-12 { width: 60%; }
+  .col-m-13 { width: 65%; }
+  .col-m-14 { width: 70%; }
+  .col-m-15 { width: 75%; }
+  .col-m-16 { width: 80%; }
+  .col-m-17 { width: 85%; }
+  .col-m-18 { width: 90%; }
+  .col-m-19 { width: 95%; }
+  .col-m-20 { width: 100%; }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-t-1 { width: 5%; }
+  .col-t-2 { width: 10%; }
+  .col-t-3 { width: 15%; }
+  .col-t-4 { width: 20%; }
+  .col-t-5 { width: 25%; }
+  .col-t-6 { width: 30%; }
+  .col-t-7 { width: 35%; }
+  .col-t-8 { width: 40%; }
+  .col-t-9 { width: 45%; }
+  .col-t-10 { width: 50%; }
+  .col-t-11 { width: 55%; }
+  .col-t-12 { width: 60%; }
+  .col-t-13 { width: 65%; }
+  .col-t-14 { width: 70%; }
+  .col-t-15 { width: 75%; }
+  .col-t-16 { width: 80%; }
+  .col-t-17 { width: 85%; }
+  .col-t-18 { width: 90%; }
+  .col-t-19 { width: 95%; }
+  .col-t-20 { width: 100%; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1024px) {
+  .col-d-1 { width: 5%; }
+  .col-d-2 { width: 10%; }
+  .col-d-3 { width: 15%; }
+  .col-d-4 { width: 20%; }
+  .col-d-5 { width: 25%; }
+  .col-d-6 { width: 30%; }
+  .col-d-7 { width: 35%; }
+  .col-d-8 { width: 40%; }
+  .col-d-9 { width: 45%; }
+  .col-d-10 { width: 50%; }
+  .col-d-11 { width: 55%; }
+  .col-d-12 { width: 60%; }
+  .col-d-13 { width: 65%; }
+  .col-d-14 { width: 70%; }
+  .col-d-15 { width: 75%; }
+  .col-d-16 { width: 80%; }
+  .col-d-17 { width: 85%; }
+  .col-d-18 { width: 90%; }
+  .col-d-19 { width: 95%; }
+  .col-d-20 { width: 100%; }
+}

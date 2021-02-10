@@ -23,7 +23,7 @@ def extract_headlines(hdivs):
         link = match.group(1)
         gnews += link[1:]
 
-        head = match.group(2)
+        head = re.sub('&#39;','\'',match.group(2))
         headlines.append((gnews, head))
 
     return headlines
