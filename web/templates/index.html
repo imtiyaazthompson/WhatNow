@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>What Now | Quick News</title>
     <link rel="stylesheet" href="../static/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="col-d-20">header</div>
+  <body class="bg-off-white">
+    <div class="col-d-20 header arvo-font large-font"><h1>whatnow</h1></div>
     <div class="newline"></div>
     <br>
     <div class="col-d-8">
@@ -27,11 +29,11 @@
     </div>
     <div class="col-d-12">
       {% if country != None %}
-      <ol>
         {% for headline in news %}
-          <li><a href="{{ headline[0] }}">{{ headline[1] }}</a></li>
+        <div class="col-d-20 grow">
+          <a class="no-dec" href="https://{{ headline[0] }}" target="_blank">{{ headline[1] }}</a>
+        </div>
         {% endfor %}
-      </ol>
       {% endif %}
 
       {% if country == None %}

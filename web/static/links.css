@@ -1,0 +1,12 @@
+.no-dec {
+  text-decoration: none;
+}
+
+.blip {
+  transition: width 2s, height 2s;
+}
+
+.grow:hover {
+  width: 105%;
+  height: 103%;
+}
