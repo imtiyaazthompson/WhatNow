@@ -15,9 +15,49 @@
 }
 
 .cool-white {
-  color: #f6f68f;
+  color: #f0fff0;
 }
 
 .red {
   color: #c60021;
+}
+
+.bg-eyellow {
+  background-color: #ffdf6c;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-blackish {
+  background-color: #202020;
+}
+
+.bg-dgrey {
+  background-color: #3F3F3F;
+}
+
+.bg-mgrey {
+  background-color: #707070;
+}
+
+.eyellow {
+  color: #ffdf6c;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.blackish {
+  color: #202020;
+}
+
+.dgrey {
+  color: #3F3F3F;
+}
+
+.mgrey {
+  color: #707070;
 }

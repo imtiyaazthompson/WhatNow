@@ -2,6 +2,10 @@
   font-family: 'Arvo';
 }
 
+.lora-font {
+  font-family: 'Lora';
+}
+
 .small-font {
   font-size: 1em;
 }
@@ -12,4 +16,16 @@
 
 .large-font {
   font-size: 3em;
+}
+
+.pop-red {
+  text-shadow: 2px 2px #c60021;
+}
+
+.pop-cool-white {
+  text-shadow: 3px 3px 1px #f0fff0;
+}
+
+.faint-cool-white {
+  text-shadow: 1px 1px 2px #f0fff0;
 }
