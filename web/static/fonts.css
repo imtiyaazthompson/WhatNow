@@ -6,12 +6,17 @@
   font-family: 'Lora';
 }
 
+.scope-font {
+  font-family: 'Scope One';
+  font-weight: bold;
+}
+
 .small-font {
   font-size: 1em;
 }
 
 .medium-font {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .large-font {
@@ -24,6 +29,10 @@
 
 .pop-cool-white {
   text-shadow: 3px 3px 1px #f0fff0;
+}
+
+.pop-eyellow {
+  text-shadow: 2px 2px 1px #ffdf6c;
 }
 
 .faint-cool-white {

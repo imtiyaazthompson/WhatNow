@@ -6,7 +6,7 @@
   [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .newline::after {
@@ -20,7 +20,7 @@
   }
 
   .bottom-hat {
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   .fill-height {

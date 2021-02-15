@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
   </head>
   <body class="bg-blackish">
     <div class="col-d-20">
-      <div class="col-d-20 header arvo-font large-font mgrey pop-cool-white"><h1>whatnow</h1></div>
+      <div class="col-d-20 header arvo-font large-font mgrey pop-eyellow"><h1>whatnow</h1></div>
       <div class="col-d-4"></div>
-      <div class="col-d-16 lora-font medium-font white">quick news</div>
+      <div class="col-d-16 scope-font medium-font eyellow" style="padding-left: 65px;">quick news</div>
     </div>
     <div class="newline"></div>
-    <br>
-    <div class="col-d-20" style="height: 180px;">
-      <div class="col-d-8 fill-height">
-        <div class="col-d-5 fill-height">
-          <img src="../../res/globe.svg" alt="">
+    <div class="col-d-20 bg-eyellow" style:"min-height: 100%;">
+      <div class="col-d-8">
+        <div class="col-d-5">
+          <img src="/static/globe.svg" alt="">
         </div>
-        <div class="col-d-15 fill-height">
+        <div class="col-d-15">
           <form class="country" id="country" action="" method="post">
             <select class="fill-width" name="countries">
               {% for country in countries %}
@@ -33,17 +33,19 @@
           </form>
         </div>
       </div>
-      <div class="col-d-12 fill-height">
+      <div class="col-d-12" style:"margin-bottom: 10px;">
         {% if country != None %}
           {% for headline in news %}
-          <div class="col-d-20 height-default blip grow">
-            <a class="no-dec red lora-font medium-font" href="https://{{ headline[0] }}" target="_blank">{{ headline[1] }}</a>
+          <div class="col-d-20 height-default blip grow bg-dgrey bottom-hat">
+            <a class="no-dec white scope-font medium-font" href="https://{{ headline[0] }}" target="_blank">{{ headline[1] }}</a>
           </div>
           {% endfor %}
         {% endif %}
 
         {% if country == None %}
-         We got no news bud!
+        <div class="col-d-20 height-default bg-dgrey bottom-hat">
+          <p class="no-dec white scope-font medium-font">Select a country<p>
+        </div>
         {% endif %}
       </div>
     </div>
