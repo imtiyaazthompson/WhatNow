@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" style="height: 100%;">
   <head>
     <meta charset="utf-8">
     <title>What Now | Quick News</title>
@@ -9,14 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-blackish">
-    <div class="col-d-20">
+  <body class="bg-blackish" style="height: 100%;">
+    <div class="col-d-20" style="height: 40%;">
       <div class="col-d-20 header arvo-font large-font mgrey pop-eyellow"><h1>whatnow</h1></div>
       <div class="col-d-4"></div>
       <div class="col-d-16 scope-font medium-font eyellow" style="padding-left: 65px;">quick news</div>
     </div>
     <div class="newline"></div>
-    <div class="col-d-20 bg-eyellow" style:"min-height: 100%;">
+    {% if country == None %}
+      <div class="col-d-20 bg-eyellow" style="height: 60%;">
+    {% endif %}
+    {% if country != None %}
+      <div class="col-d-20 bg-eyellow" style="height: auto;">
+    {% endif %}
       <div class="col-d-8">
         <div class="col-d-5">
           <img src="/static/globe.svg" alt="">
@@ -44,7 +49,7 @@
 
         {% if country == None %}
         <div class="col-d-20 height-default bg-dgrey bottom-hat">
-          <p class="no-dec white scope-font medium-font">Select a country<p>
+          <p class="no-dec white scope-font medium-font">Headline's from around the world?<p>
         </div>
         {% endif %}
       </div>
