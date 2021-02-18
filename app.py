@@ -5,7 +5,7 @@ import re
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST','GET'])
+@app.route('https://whatnownews.herokuapp.com/', methods=['POST','GET'])
 def index():
 
     # Extract country names for dropdown list
