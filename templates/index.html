@@ -17,10 +17,10 @@
     </div>
     <div class="newline"></div>
     {% if country == None %}
-      <div class="col-d-20 bg-eyellow" style="height: 60%;">
+      <div class="col-d-20 bg-eyellow" style="height: 60%; border: 3px outset #707070; border-radius: 3px;">
     {% endif %}
     {% if country != None %}
-      <div class="col-d-20 bg-eyellow" style="height: auto;">
+      <div class="col-d-20 bg-eyellow" style="height: auto; border: 3px outset #707070; border-radius: 3px;">
     {% endif %}
       <div class="col-d-8">
         <div class="col-d-5">
@@ -41,7 +41,7 @@
       <div class="col-d-12" style:"margin-bottom: 10px;">
         {% if country != None %}
           {% for headline in news %}
-          <div class="col-d-20 height-default blip grow bg-dgrey bottom-hat">
+          <div class="col-d-20 height-default blip grow bg-dgrey bottom-hat" style="border-radius: 2px;">
             <a class="no-dec white scope-font medium-font" href="https://{{ headline[0] }}" target="_blank">{{ headline[1] }}</a>
           </div>
           {% endfor %}
