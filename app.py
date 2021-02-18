@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
 
     # Extract country names for dropdown list
-    f = open('../res/countries.txt','r')
+    f = open('res/countries.txt','r')
     countries = f.readlines()
 
     for i in range(len(countries)):
