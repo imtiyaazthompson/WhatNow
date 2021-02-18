@@ -1,1 +1,1 @@
-web: gunicorn whatnownews:app
+web: gunicorn app:app
